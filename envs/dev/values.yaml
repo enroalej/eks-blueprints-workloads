@@ -15,6 +15,7 @@ spec:
   env: dev
   clusterName: eks-blueprint-cluster # the name of EKS cluster
   blueprint: 'terraform' # cdk | terraform
+  karpenterInstanceProfile:
   ingress:
     type: 'alb' # nginx | alb
     host: # empty or your domain like dev.example.com
