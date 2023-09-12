@@ -7,7 +7,7 @@ spec:
   selector:
     matchLabels:
       app: skiapp
-  replicas: 3
+  replicas: 1
   template:
     metadata:
       labels:
@@ -43,8 +43,8 @@ spec:
           whenUnsatisfiable: DoNotSchedule
           labelSelector:
             matchLabels:
-              app: skiapp          
+              app: skiapp
       tolerations:
         - key: 'karpenter'
           operator: 'Exists'
-          effect: 'NoSchedule'                
+          effect: 'NoSchedule'
