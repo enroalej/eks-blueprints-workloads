@@ -25,7 +25,8 @@ spec:
                 secretKeyRef:
                   name: 'leemons-secrets'
                   key: MONGO_URI
-            - TRANSPORTER: $(TEAM_PLUGINS_NATS_PORT)
+            - name: TRANSPORTER
+              value: $(TEAM_PLUGINS_NATS_PORT)
 
           resources:
             limits:
