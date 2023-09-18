@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: gateway
+  name: transactions
   labels:
     app: plugins
     {{- toYaml .Values.labels | nindent 4 }}
@@ -10,17 +10,15 @@ spec:
   revisionHistoryLimit: 3
   selector:
     matchLabels:
-      app: gateway
+      app: transactions
   template:
     metadata:
       labels:
-        app: gateway
+        app: transactions
     spec:
       containers:
-        - name: gateway
-          image: 652084867515.dkr.ecr.eu-west-1.amazonaws.com/gateway:dev
-          ports:
-            - containerPort: 3000
+        - name: transactions
+          image: 652084867515.dkr.ecr.eu-west-1.amazonaws.com/transactions:dev
           env:
             - name: MONGO_URI
               valueFrom:
@@ -28,6 +26,7 @@ spec:
                   name: 'leemons-secrets'
                   key: MONGO_URI
             - TRANSPORTER: $(TEAM_PLUGINS_NATS_PORT)
+
           resources:
             limits:
               cpu: 250m
