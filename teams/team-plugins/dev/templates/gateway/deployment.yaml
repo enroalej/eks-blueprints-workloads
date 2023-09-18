@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
         - name: gateway
-          image: gateway:dev
+          image: 652084867515.dkr.ecr.eu-west-1.amazonaws.com/gateway:dev
           ports:
             - containerPort: 3000
           resources:
