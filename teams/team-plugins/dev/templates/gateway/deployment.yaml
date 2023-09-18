@@ -23,7 +23,7 @@ spec:
             - containerPort: 3000
           env:
             - name: MONGO_URI
-              valueFrom
+              valueFrom:
                 secretKeyRef:
                   name: 'leemons-secrets'
                   key: MONGO_URI
