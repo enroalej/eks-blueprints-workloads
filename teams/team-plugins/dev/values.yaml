@@ -6,7 +6,7 @@ spec:
     host:
     type: alb
 
-common-env:
+commonEnv:
     - name: MONGO_URI
       valueFrom:
         configMapKeyRef:
