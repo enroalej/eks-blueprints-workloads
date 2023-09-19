@@ -21,6 +21,6 @@ commonEnv:
   - name: RELOAD_MENU_ITEMS_ON_EVERY_INSTALL
     value: "true"
   - name: DISABLE_AUTO_INIT
-    value: "true"
+    value: "false"
   - name: DEBUG
     value: "false"
