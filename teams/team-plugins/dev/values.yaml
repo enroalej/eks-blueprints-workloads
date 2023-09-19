@@ -9,7 +9,7 @@ spec:
 commonEnv:
   - name: MONGO_URI
     valueFrom:
-      configMapKeyRef:
+      secretKeyRef:
         name: 'leemons-secrets'
         key: MONGO_URI
   - name: RELOAD_I18N_ON_EVERY_INSTALL
