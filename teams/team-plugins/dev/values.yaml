@@ -2,7 +2,11 @@ labels:
   env: dev
   team: plugins
 spec:
-  env:
+  ingress:
+    host:
+    type: alb
+
+common-env:
     - name: MONGO_URI
       valueFrom:
         configMapKeyRef:
@@ -20,6 +24,3 @@ spec:
       value: "true"
     - name: DEBUG
       value: "false"
-  ingress:
-    host:
-    type: alb
