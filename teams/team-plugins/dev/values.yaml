@@ -24,3 +24,5 @@ commonEnv:
     value: "false"
   - name: DEBUG
     value: "false"
+  - name: TRANSPORTER
+    value: "nats://$(TEAM_PLUGINS_NATS_PORT_4222_TCP_ADDR):$(TEAM_PLUGINS_NATS_PORT_4222_TCP_PORT)"
