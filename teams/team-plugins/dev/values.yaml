@@ -3,18 +3,23 @@ labels:
   team: plugins
 spec:
   env:
-    MONGO_URI:
+    - name: MONGO_URI
       valueFrom:
         configMapKeyRef:
           name: 'leemons-secrets'
           key: MONGO_URI
-    # REDIS_URI: redis_uri
-    RELOAD_I18N_ON_EVERY_INSTALL: "true"
-    RELOAD_WIDGETS_ON_EVERY_INSTALL: "true"
-    RELOAD_MENUS_ON_EVERY_INSTALL: "true"
-    RELOAD_MENU_ITEMS_ON_EVERY_INSTALL: "true"
-    DISABLE_AUTO_INIT: "true"
-    DEBUG: "false"
+    - name: RELOAD_I18N_ON_EVERY_INSTALL
+      value: "true"
+    - name: RELOAD_WIDGETS_ON_EVERY_INSTALL
+      value: "true"
+    - name: RELOAD_MENUS_ON_EVERY_INSTALL
+      value: "true"
+    - name: RELOAD_MENU_ITEMS_ON_EVERY_INSTALL
+      value: "true"
+    - name: DISABLE_AUTO_INIT
+      value: "true"
+    - name: DEBUG
+      value: "false"
   ingress:
     host:
     type: alb
