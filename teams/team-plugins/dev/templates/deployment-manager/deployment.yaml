@@ -20,8 +20,7 @@ spec:
         - name: deployment-manager
           image: 652084867515.dkr.ecr.eu-west-1.amazonaws.com/deployment-manager:dev
           imagePullPolicy: Always
-          env:
-            {{- toYaml .Values.spec.env | nindent 12 }}
+          env: {{.Values.spec.env}}
           resources:
             limits:
               cpu: 250m
