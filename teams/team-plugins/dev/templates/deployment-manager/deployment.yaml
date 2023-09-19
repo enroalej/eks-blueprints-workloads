@@ -26,7 +26,7 @@ spec:
                   name: 'leemons-secrets'
                   key: MONGO_URI
             - name: TRANSPORTER
-              value: $(TEAM_PLUGINS_NATS_PORT)
+              value: "nats://$(TEAM_PLUGINS_NATS_PORT_4222_TCP_ADDR):$(TEAM_PLUGINS_NATS_PORT_4222_TCP_PORT)"
 
           resources:
             limits:
