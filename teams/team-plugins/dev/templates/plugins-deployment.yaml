@@ -30,4 +30,5 @@ spec:
           requests:
             cpu: 125m
             memory: 50Mi
+---
 {{- end }}
