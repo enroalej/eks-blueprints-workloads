@@ -49,6 +49,8 @@ images:
     tag: "dev"
   - name: "calendar"
     tag: "dev"
+  - name: "common"
+    tag: "dev"
   - name: "comunica"
     tag: "dev"
   - name: "content-creator"
