@@ -21,7 +21,7 @@ commonEnv:
   - name: RELOAD_MENU_ITEMS_ON_EVERY_INSTALL
     value: "true"
   - name: DISABLE_AUTO_INIT
-    value: "false"
+    value: "true"
   - name: DEBUG
     value: "false"
   - name: TRANSPORTER
