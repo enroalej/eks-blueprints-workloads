@@ -12,6 +12,11 @@ commonEnv:
       secretKeyRef:
         name: 'leemons-secrets'
         key: MONGO_URI
+  - name: MANUAL_PASSWORD
+    valueFrom:
+      secretKeyRef:
+        name: 'leemons-secrets'
+        key: MANUAL_PASSWORD
   - name: RELOAD_I18N_ON_EVERY_INSTALL
     value: "true"
   - name: RELOAD_WIDGETS_ON_EVERY_INSTALL
