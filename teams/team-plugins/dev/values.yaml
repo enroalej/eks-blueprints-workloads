@@ -38,7 +38,7 @@ images:
   # - name: "academic-portfolio"
   #   tag: "dev"
   - name: "admin"
-  #   tag: "dev"
+    tag: "dev"
   # - name: "assignables"
   #   tag: "dev"
   # - name: "attendance-control"
