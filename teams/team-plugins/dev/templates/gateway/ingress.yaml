@@ -23,7 +23,7 @@ spec:
             pathType: Prefix
             backend:
               service:
-                name: gateway-service-http
+                name: gateway-service
                 port:
                   number: 80
       https:
@@ -32,7 +32,7 @@ spec:
             pathType: Prefix
             backend:
               service:
-                name: gateway-service-https
+                name: gateway-service
                 port:
                   number: 443
 
