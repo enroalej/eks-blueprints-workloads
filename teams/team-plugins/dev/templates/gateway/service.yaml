@@ -3,6 +3,8 @@ kind: Service
 metadata:
   name: gateway-service
   namespace: team-plugins
+  annotations:
+    service.beta.kubernetes.io/aws-load-balancer-ssl-cert: arn:aws:acm:eu-west-1:652084867515:certificate/bc65bac6-a5e8-4ee0-bcce-6f98d0acf32e
 spec:
   ports:
     - port: 80
@@ -17,3 +19,4 @@ spec:
   type: NodePort
   selector:
     app: gateway
+
