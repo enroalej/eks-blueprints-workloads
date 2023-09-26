@@ -6,6 +6,9 @@ spec:
     host:
     type: alb
 
+nats:
+  replicaCount: 3
+
 commonEnv:
   - name: MONGO_URI
     valueFrom:
