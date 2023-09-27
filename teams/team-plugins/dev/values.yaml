@@ -7,9 +7,10 @@ spec:
     type: alb
 
 nats:
-  cluster:
-    enabled: true
-    replicas: 3
+  config:
+    cluster:
+      enabled: true
+      replicas: 3
 
 commonEnv:
   - name: MONGO_URI
