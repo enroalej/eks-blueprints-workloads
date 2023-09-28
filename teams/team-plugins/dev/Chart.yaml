@@ -7,3 +7,9 @@ dependencies:
   - name: nats
     version: 1.0.3
     repository: https://nats-io.github.io/k8s/helm/charts/
+  - name: prometheus
+    repository: https://prometheus-community.github.io/helm-charts
+  - name: jaeger_operator
+    repository: https://jaegertracing.github.io/helm-charts
+  - name: jaeger
+    repository: https://jaegertracing.github.io/helm-charts

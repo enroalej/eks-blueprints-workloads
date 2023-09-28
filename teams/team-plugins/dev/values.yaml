@@ -37,6 +37,11 @@ commonEnv:
     value: "false"
   - name: TRANSPORTER
     value: "nats://$(TEAM_PLUGINS_NATS_PORT_4222_TCP_ADDR):$(TEAM_PLUGINS_NATS_PORT_4222_TCP_PORT)"
+  - name: JAEGER_HOST
+    value: "$(JAEGER_SERVICE_HOST)"
+  - name: JAEGER_PORT
+    value: "$(JAEGER_SERVICE_PORT)"
+
 
 images:
   - name: "academic-calendar"
