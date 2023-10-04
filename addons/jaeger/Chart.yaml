@@ -1,0 +1,17 @@
+apiVersion: v2
+name: jaeger
+description: A Helm chart for installing jaeger
+type: application
+
+# The chart version. This version number should be incremented each time you make changes
+# to the chart and its templates, including the app version.
+version: 0.0.1
+
+# Version number of the application being deployed. This version number should be
+# incremented each time you make changes to the application.
+appVersion: "0.1"
+
+dependencies:
+- name: jaeger
+  version: 0.71.14
+  repository: https://jaegertracing.github.io/helm-charts
