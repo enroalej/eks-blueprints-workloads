@@ -38,9 +38,9 @@ commonEnv:
   - name: TRANSPORTER
     value: "nats://team-plugins-nats:4222"
   - name: JAEGER_HOST
-    value: "jaeger-collector.jaeger.svc.cluster.local"
+    value: "jaeger-agent.jaeger.svc.cluster.local"
   - name: JAEGER_PORT
-    value: "14268"
+    value: "6831"
 
 
 images:
