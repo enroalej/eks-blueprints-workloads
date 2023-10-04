@@ -38,9 +38,9 @@ commonEnv:
   - name: TRANSPORTER
     value: "nats://$(TEAM_PLUGINS_NATS_PORT_4222_TCP_ADDR):$(TEAM_PLUGINS_NATS_PORT_4222_TCP_PORT)"
   - name: JAEGER_HOST
-    value: "$(JAEGER_AGENT_PORT_6832_UDP_ADDR)"
+    value: "172.20.231.180"
   - name: JAEGER_PORT
-    value: "$(JAEGER_AGENT_PORT_6832_UDP_PORT)"
+    value: "14268"
 
 
 images:
