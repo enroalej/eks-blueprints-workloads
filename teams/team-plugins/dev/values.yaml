@@ -36,9 +36,9 @@ commonEnv:
   - name: DEBUG
     value: "false"
   - name: TRANSPORTER
-    value: "nats://$(TEAM_PLUGINS_NATS_PORT_4222_TCP_ADDR):$(TEAM_PLUGINS_NATS_PORT_4222_TCP_PORT)"
+    value: "nats://team-plugins-nats:4222"
   - name: JAEGER_HOST
-    value: "172.20.231.180"
+    value: "jaeger-collector.jaeger.svc.cluster.local"
   - name: JAEGER_PORT
     value: "14268"
 
