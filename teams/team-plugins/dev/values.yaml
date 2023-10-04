@@ -40,7 +40,7 @@ commonEnv:
   - name: JAEGER_HOST
     value: "jaeger-agent.jaeger.svc.cluster.local"
   - name: JAEGER_PORT
-    value: "6831"
+    value: "6832"
 
 
 images:
