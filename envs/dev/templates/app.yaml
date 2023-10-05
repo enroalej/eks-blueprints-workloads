@@ -1,14 +1,14 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: app-test
-  namespace: "test"
+  name: addons-test
+  namespace: {{ .Values.argoNamespace | default "argocd" }}
   labels:
     {{- toYaml .Values.labels | nindent 4 }}
   finalizers:
   - resources-finalizer.argocd.argoproj.io
 spec:
-  project: app-test
+  project: {{ .Values.argoProject | default "default" }}
   destination:
     namespace: test
     server: {{ .Values.spec.destination.server }}
