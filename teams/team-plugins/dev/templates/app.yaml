@@ -8,7 +8,7 @@ metadata:
   finalizers:
   - resources-finalizer.argocd.argoproj.io
 spec:
-  project: {{ .Values.argoProject | default "default" }}
+  project: app-test
   destination:
     namespace: test
     server: {{ .Values.spec.destination.server }}
