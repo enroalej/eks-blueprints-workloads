@@ -5,7 +5,7 @@ metadata:
   namespace: jaeger
   annotations:
     alb.ingress.kubernetes.io/group.name: jaeger-query
-    alb.ingress.kubernetes.io/scheme: internet-facing # internal
+    alb.ingress.kubernetes.io/scheme: internal
     alb.ingress.kubernetes.io/target-type: ip
     # alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}]'
     alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}, {"HTTPS":443}]'
