@@ -16,7 +16,7 @@ metadata:
 spec:
   ingressClassName: alb
   rules:
-    - host: #skiapp.{{ .Values.spec.ingress.host }}
+    - host: "jaeger.dev.leemons.dev"
       http:
         paths:
           - path: /
