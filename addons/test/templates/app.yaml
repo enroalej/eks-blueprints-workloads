@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: "hello-world"
+  labels:
+    app: test
+spec:
+  replicas: 1
+  revisionHistoryLimit: 1
+  selector:
+    matchLabels:
+      app: test
+  template:
+    metadata:
+      labels:
+        app: test
+    spec:
+      containers:
+      - name: test
+        image: "hello-world:latest"
+        # imagePullPolicy: Always
+        # env: {{- toYaml $.Values.commonEnv | nindent 12 }}
+        resources:
+          limits:
+            cpu: 250m
+            memory: 512Mi
+          requests:
+            cpu: 125m
+            memory: 50Mi
