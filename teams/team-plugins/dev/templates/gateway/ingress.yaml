@@ -16,7 +16,7 @@ metadata:
 spec:
   ingressClassName: alb
   rules:
-    - host: gateway.dev.leemons.dev
+    - host: api.leemons.dev
       http:
         paths:
           - path: /

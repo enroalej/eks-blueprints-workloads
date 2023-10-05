@@ -16,7 +16,7 @@ metadata:
 spec:
   ingressClassName: alb
   rules:
-    - host: "jaeger.dev.leemons.dev"
+    - host: "jaeger.leemons.dev"
       http:
         paths:
           - path: /
