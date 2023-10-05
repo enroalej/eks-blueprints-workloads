@@ -18,8 +18,6 @@ spec:
       containers:
       - name: test
         image: "hello-world:latest"
-        # imagePullPolicy: Always
-        # env: {{- toYaml $.Values.commonEnv | nindent 12 }}
         resources:
           limits:
             cpu: 250m
