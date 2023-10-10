@@ -25,7 +25,7 @@ commonEnv:
         name: 'leemons-secrets'
         key: MANUAL_PASSWORD
   - name: MIN_POOL_SIZE
-    value: "200"
+    value: "150"
   - name: MAX_POOL_SIZE
     value: "1000"
   - name: RELOAD_I18N_ON_EVERY_INSTALL
