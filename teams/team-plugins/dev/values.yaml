@@ -27,7 +27,7 @@ commonEnv:
   - name: MIN_POOL_SIZE
     value: "200"
   - name: MAX_POOL_SIZE
-    value: "300"
+    value: "1000"
   - name: RELOAD_I18N_ON_EVERY_INSTALL
     value: "true"
   - name: RELOAD_WIDGETS_ON_EVERY_INSTALL
