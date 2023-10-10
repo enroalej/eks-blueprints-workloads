@@ -5,5 +5,5 @@ description: Team Plugins applications for the Dev environment.
 version: 0.1.0
 dependencies:
   - name: nats
-    version: 1.0.3
+    version: 1.1.0
     repository: https://nats-io.github.io/k8s/helm/charts/
