@@ -7,12 +7,6 @@ spec:
     type: alb
   replicas: 2
 
-nats:
-  config:
-    cluster:
-      enabled: true
-      replicas: 1
-
 commonEnv:
   - name: MONGO_URI
     valueFrom:

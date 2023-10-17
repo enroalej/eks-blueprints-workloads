@@ -1,0 +1,17 @@
+apiVersion: v2
+name: nats
+description: A Helm chart for installing nats
+type: application
+
+# The chart version. This version number should be incremented each time you make changes
+# to the chart and its templates, including the app version.
+version: 0.0.1
+
+# Version number of the application being deployed. This version number should be
+# incremented each time you make changes to the application.
+appVersion: "0.1"
+
+dependencies:
+  - name: nats
+    version: 1.1.0
+    repository: https://nats-io.github.io/k8s/helm/charts/

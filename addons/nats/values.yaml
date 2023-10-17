@@ -1,0 +1,7 @@
+nats:
+  config:
+    cluster:
+      enabled: true
+      replicas: 3
+  promExporter:
+    enabled: true
