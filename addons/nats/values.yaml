@@ -5,7 +5,7 @@ nats:
       replicas: 3
   #   monitor:
   #     enabled: true
-  # promExporter:
-  #   enabled: true
-  #   podMonitor:
-  #     enabled: true
+  promExporter:
+    enabled: true
+    podMonitor:
+      enabled: true
