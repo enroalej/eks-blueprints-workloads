@@ -7,5 +7,5 @@ nats:
   #     enabled: true
   promExporter:
     enabled: true
-    podMonitor:
-      enabled: true
+    # podMonitor:
+    #   enabled: true
