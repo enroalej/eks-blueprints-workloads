@@ -6,7 +6,7 @@ metadata:
   labels:
     {{- toYaml .Values.labels | nindent 4 }}
   finalizers:
-  - resources-finalizer.argocd.argoproj.io
+    - resources-finalizer.argocd.argoproj.io
 spec:
   project: {{ .Values.argoProject | default "default" }}
   destination:
@@ -23,4 +23,4 @@ spec:
     automated:
       prune: true
     syncOptions:
-    - CreateNamespace=true
+      - CreateNamespace=true
