@@ -8,6 +8,8 @@ metadata:
 spec:
   replicas: 2
   revisionHistoryLimit: 3
+  nodeSelector:
+    intent: apps
   selector:
     matchLabels:
       app: gateway
