@@ -17,6 +17,8 @@ spec:
       labels:
         app: {{ .name }}
     spec:
+      nodeSelector:
+        intent: apps
       containers:
       - name: {{ .name }}
         image: "{{ .name }}:{{ .tag }}"

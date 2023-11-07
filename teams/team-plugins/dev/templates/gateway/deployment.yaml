@@ -8,8 +8,6 @@ metadata:
 spec:
   replicas: 2
   revisionHistoryLimit: 3
-  nodeSelector:
-    intent: apps
   selector:
     matchLabels:
       app: gateway
@@ -27,7 +25,7 @@ spec:
           ports:
             - containerPort: 3000
           env:
-            {{- toYaml .Values.commonEnv | nindent 12 }}
+          {{- toYaml .Values.commonEnv | nindent 12 }}
           resources:
             limits:
               cpu: 250m
