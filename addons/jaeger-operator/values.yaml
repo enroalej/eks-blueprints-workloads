@@ -1,0 +1,3 @@
+jaeger-operator:
+  nodeSelector:
+    intent: apps

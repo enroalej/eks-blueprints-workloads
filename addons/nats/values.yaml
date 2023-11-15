@@ -1,4 +1,7 @@
 nats:
+  pod:
+    nodeSelector:
+      intent: apps
   config:
     cluster:
       enabled: true
@@ -9,3 +12,10 @@ nats:
     enabled: true
     # podMonitor:
     #   enabled: true
+natsbox:
+  nodeSelector:
+    intent: apps
+# nats:
+#   nodeSelector:
+#     intent: apps
+#   replicaCount: 3
