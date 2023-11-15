@@ -14,6 +14,6 @@ spec:
       protocol: TCP
       name: https
 
-  type: NodePort
+  type: ClusterIP
   selector:
     app: gateway

@@ -18,6 +18,15 @@ spec:
     spec:
       nodeSelector:
         intent: apps
+      affinity:
+        nodeAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            nodeSelectorTerms:
+            - matchExpressions:
+              - key: intent
+                operator: In
+                values:
+                - apps
       containers:
         - name: gateway
           image: 652084867515.dkr.ecr.eu-west-1.amazonaws.com/gateway:dev

@@ -19,6 +19,15 @@ spec:
     spec:
       nodeSelector:
         intent: apps
+      affinity:
+        nodeAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            nodeSelectorTerms:
+            - matchExpressions:
+              - key: intent
+                operator: In
+                values:
+                - apps
       containers:
       - name: {{ .name }}
         image: "{{ .name }}:{{ .tag }}"
