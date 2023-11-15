@@ -1,13 +1,13 @@
 jaeger:
   agent:
     nodeSelector:
-      intent: apps
+      intent: addons
   collector:
     nodeSelector:
-      intent: apps
+      intent: addons
   query:
     nodeSelector:
-      intent: apps
+      intent: addons
   ingester:
     nodeSelector:
-      intent: apps
+      intent: addons
