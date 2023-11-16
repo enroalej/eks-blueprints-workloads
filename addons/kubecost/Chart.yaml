@@ -1,0 +1,12 @@
+apiVersion: v2
+name: kubecost
+description: A Helm chart for installing kubecost
+type: application
+
+version: 0.0.1
+appVersion: "0.1"
+
+dependencies:
+  - name: kubecost
+    repository: "oci://public.ecr.aws/kubecost/cost-analyzer"
+    version: 1.107.0
