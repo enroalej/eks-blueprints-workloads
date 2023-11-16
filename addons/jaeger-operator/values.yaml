@@ -1,3 +1,0 @@
-jaeger-operator:
-  nodeSelector:
-    intent: addons

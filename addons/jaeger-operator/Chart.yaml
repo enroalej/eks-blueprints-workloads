@@ -12,6 +12,6 @@ version: 0.0.1
 appVersion: "0.1"
 
 dependencies:
-- name: jaeger-operator
-  version: 2.47.0
-  repository: https://jaegertracing.github.io/helm-charts
+  - name: jaeger-operator
+    version: 2.49.0
+    repository: https://jaegertracing.github.io/helm-charts
