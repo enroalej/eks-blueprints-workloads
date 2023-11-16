@@ -7,6 +7,6 @@ version: 0.0.1
 appVersion: "0.1"
 
 dependencies:
-  - name: kubecost
-    repository: "oci://public.ecr.aws/kubecost/cost-analyzer"
+  - name: cost-analyzer
+    repository: "oci://public.ecr.aws/kubecost"
     version: 1.107.0
